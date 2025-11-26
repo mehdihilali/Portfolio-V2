@@ -24,10 +24,29 @@
         "story": "Mon Histoire",
         "frontend": "Frontend",
         "backend": "Backend",
-        "tools": "Outils & Autres"
+        "tools": "Outils & Autres",
+        "highlights": {
+            "cleanCode": {
+                "title": "Clean Code & TDD",
+                "description": "Écriture de code maintenable et bien structuré avec de solides pratiques de test (JUnit, Mockito)"
+            },
+            "microservices": {
+                "title": "Architecture Microservices",
+                "description": "Construction de systèmes évolutifs avec microservices Spring Boot, messagerie RabbitMQ et API sécurisées"
+            },
+            "innovation": {
+                "title": "Innovation & IA",
+                "description": "Expérience dans la création de chatbots intelligents avec Rasa et l'intégration de fonctionnalités pilotées par l'IA"
+            },
+            "agile": {
+                "title": "Collaboration Agile",
+                "description": "Esprit d'équipe, travail dans des environnements Scrum avec CI/CD et amélioration continue"
+            }
+        }
     },
     "experience": {
         "title": "Expérience",
+        "subtitle": "Mon parcours professionnel et les entreprises incroyables avec lesquelles j'ai travaillé",
         "present": "Présent"
     },
     "projects": {

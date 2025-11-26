@@ -88,7 +88,7 @@ const Experience = () => {
                         {t('experience.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        My professional journey and the amazing companies I've worked with
+                        {t('experience.subtitle')}
                     </p>
                 </motion.div>
 

@@ -14,27 +14,23 @@ const About = () => {
     const highlights = [
         {
             icon: <FaCode />,
-            title: 'Clean Code & TDD',
-            description:
-                'Writing maintainable, well-structured code with strong testing practices (JUnit, Mockito)',
+            title: t('about.highlights.cleanCode.title'),
+            description: t('about.highlights.cleanCode.description'),
         },
         {
             icon: <FaRocket />,
-            title: 'Microservices Architecture',
-            description:
-                'Building scalable systems with Spring Boot microservices, RabbitMQ messaging, and secured APIs',
+            title: t('about.highlights.microservices.title'),
+            description: t('about.highlights.microservices.description'),
         },
         {
             icon: <FaLightbulb />,
-            title: 'Innovation & AI',
-            description:
-                'Experience building intelligent chatbots with Rasa and integrating AI-driven features into applications',
+            title: t('about.highlights.innovation.title'),
+            description: t('about.highlights.innovation.description'),
         },
         {
             icon: <FaUsers />,
-            title: 'Agile Collaboration',
-            description:
-                'Team-oriented mindset, working in Scrum environments with CI/CD and continuous improvement',
+            title: t('about.highlights.agile.title'),
+            description: t('about.highlights.agile.description'),
         },
     ];
 
