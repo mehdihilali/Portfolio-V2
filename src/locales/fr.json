@@ -51,6 +51,7 @@
     },
     "projects": {
         "title": "Projets en vedette",
+        "subtitle": "Voici quelques-uns de mes projets récents qui mettent en valeur mes compétences et mon expérience",
         "viewCode": "Voir le code",
         "liveDemo": "Démo en direct"
     },

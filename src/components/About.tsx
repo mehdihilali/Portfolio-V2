@@ -7,7 +7,7 @@ const About = () => {
     const { t } = useTranslation();
     const skills = {
         frontend: ['React', 'Angular', 'Next.js', 'React Native', 'TypeScript', 'HTML5', 'CSS', 'Tailwind CSS'],
-        backend: ['Java', 'Spring Boot', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'Nest.js'],
+        backend: ['Java', 'Spring Boot', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'Nest.js', 'MySQL', 'SQL Server', 'Oracle', 'PostgreSQL', 'MongoDB'],
         tools: ['Git', 'Github', 'GitHub Actions', 'GitLab CI/CD', 'Docker', 'Keycloak', 'RabbitMQ', 'Nginx'],
     };
 

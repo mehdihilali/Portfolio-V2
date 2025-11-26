@@ -114,7 +114,7 @@ const Projects = () => {
                         {t('projects.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        Here are some of my recent projects that showcase my skills and experience
+                        {t('projects.subtitle')}
                     </p>
                 </motion.div>
 

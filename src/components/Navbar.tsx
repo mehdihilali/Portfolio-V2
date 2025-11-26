@@ -8,10 +8,7 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const toggleLanguage = () => {
-        const newLang = i18n.language === 'en' ? 'fr' : 'en';
-        i18n.changeLanguage(newLang);
-    };
+
 
     const navItems = [
         { name: t('nav.home'), href: '#home' },
@@ -86,12 +83,30 @@ const Navbar = () => {
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300" />
                             </a>
                         ))}
-                        <button
-                            onClick={toggleLanguage}
-                            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
-                        >
-                            {i18n.language === 'en' ? 'FR' : 'EN'}
-                        </button>
+                        <div className="flex items-center gap-1 bg-white/5 border border-white/10 rounded-full p-1">
+                            {['en', 'fr'].map((lang) => {
+                                const isActive = i18n.language.startsWith(lang);
+                                return (
+                                    <button
+                                        key={lang}
+                                        onClick={() => i18n.changeLanguage(lang)}
+                                        className={`
+                                            relative px-3 py-1 text-xs font-bold rounded-full transition-colors
+                                            ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}
+                                        `}
+                                    >
+                                        {isActive && (
+                                            <motion.div
+                                                layoutId="activeLang"
+                                                className="absolute inset-0 bg-primary-500 rounded-full"
+                                                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                                            />
+                                        )}
+                                        <span className="relative z-10">{lang.toUpperCase()}</span>
+                                    </button>
+                                );
+                            })}
+                        </div>
                         <a
                             href="#contact"
                             onClick={(e) => handleNavClick(e, '#contact')}
@@ -142,12 +157,30 @@ const Navbar = () => {
                                     {item.name}
                                 </motion.a>
                             ))}
-                            <button
-                                onClick={toggleLanguage}
-                                className="text-xl font-medium text-slate-300 hover:text-primary-400 transition-colors mt-4"
-                            >
-                                {i18n.language === 'en' ? 'Français' : 'English'}
-                            </button>
+                            <div className="flex items-center gap-1 bg-white/5 border border-white/10 rounded-full p-1 mt-4">
+                                {['en', 'fr'].map((lang) => {
+                                    const isActive = i18n.language.startsWith(lang);
+                                    return (
+                                        <button
+                                            key={lang}
+                                            onClick={() => i18n.changeLanguage(lang)}
+                                            className={`
+                                                relative px-6 py-2 text-sm font-bold rounded-full transition-colors
+                                                ${isActive ? 'text-white' : 'text-slate-400 hover:text-white'}
+                                            `}
+                                        >
+                                            {isActive && (
+                                                <motion.div
+                                                    layoutId="activeLangMobile"
+                                                    className="absolute inset-0 bg-primary-500 rounded-full"
+                                                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                                                />
+                                            )}
+                                            <span className="relative z-10">{lang.toUpperCase()}</span>
+                                        </button>
+                                    );
+                                })}
+                            </div>
                             <motion.a
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
