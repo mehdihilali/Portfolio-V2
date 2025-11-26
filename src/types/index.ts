@@ -1,19 +1,29 @@
+export interface LocalizedString {
+    en: string;
+    fr: string;
+}
+
+export interface LocalizedArray {
+    en: string[];
+    fr: string[];
+}
+
 export interface Experience {
     id: string;
     company: string;
-    position: string;
-    duration: string;
-    location: string;
-    description: string[];
+    position: LocalizedString;
+    duration: LocalizedString;
+    location: LocalizedString;
+    description: LocalizedArray;
     technologies: string[];
     logo?: string;
 }
 
 export interface Project {
     id: string;
-    title: string;
-    description: string;
-    longDescription?: string;
+    title: LocalizedString;
+    description: LocalizedString;
+    longDescription?: LocalizedString;
     technologies: string[];
     image: string;
     githubUrl?: string;

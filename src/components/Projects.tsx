@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import { projects } from '../data/projects';
-import type { Project } from '../types';
+import type { Project, LocalizedString } from '../types';
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
+    const { t, i18n } = useTranslation();
+    const lang = (i18n.language.startsWith('fr') ? 'fr' : 'en') as keyof LocalizedString;
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -18,7 +22,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 {project.image ? (
                     <img
                         src={project.image}
-                        alt={project.title}
+                        alt={project.title[lang]}
                         className="w-full h-full object-cover"
                         onError={(e) => {
                             // Optional: fallback if image fails to load
@@ -42,10 +46,10 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             {/* Project Content */}
             <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 group-hover:text-primary-400 transition-colors">
-                    {project.title}
+                    {project.title[lang]}
                 </h3>
                 <p className="text-slate-400 mb-4 line-clamp-2">
-                    {project.longDescription || project.description}
+                    {project.longDescription?.[lang] || project.description[lang]}
                 </p>
 
                 {/* Technologies */}
@@ -70,7 +74,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                             className="flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors"
                         >
                             <FaGithub className="text-xl" />
-                            <span className="text-sm font-medium">Code</span>
+                            <span className="text-sm font-medium">{t('projects.viewCode')}</span>
                         </a>
                     )}
                     {project.liveUrl && (
@@ -81,7 +85,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                             className="flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors"
                         >
                             <FaExternalLinkAlt className="text-lg" />
-                            <span className="text-sm font-medium">Live Demo</span>
+                            <span className="text-sm font-medium">{t('projects.liveDemo')}</span>
                         </a>
                     )}
                 </div>
@@ -94,6 +98,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
 };
 
 const Projects = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="projects" className="py-20 relative">
             <div className="container mx-auto px-6">
@@ -105,7 +111,7 @@ const Projects = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Featured <span className="text-gradient">Projects</span>
+                        {t('projects.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
                         Here are some of my recent projects that showcase my skills and experience

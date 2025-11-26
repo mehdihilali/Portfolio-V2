@@ -19,7 +19,12 @@
         "title": "About Me",
         "description1": "I am a passionate Software Engineer with a strong foundation in web development and a keen eye for design. My journey in tech started with a curiosity about how things work on the internet, which led me to dive deep into full-stack development.",
         "description2": "I specialize in building scalable web applications using React, Node.js, and modern cloud technologies. I love solving complex problems and turning ideas into reality through code.",
-        "skills": "My Skills"
+        "description3": "I care deeply about code quality, testing, documentation, and CI/CD pipelines to deliver reliable and maintainable software.",
+        "skills": "My Skills",
+        "story": "My Story",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Tools & Others"
     },
     "experience": {
         "title": "Experience",
@@ -32,7 +37,9 @@
     },
     "contact": {
         "title": "Get In Touch",
-        "subtitle": "Let's work together",
+        "subtitle": "Have a project in mind or want to collaborate? Feel free to reach out!",
+        "letsTalk": "Let's Talk",
+        "description": "I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
         "name": "Name",
         "email": "Email",
         "message": "Message",
@@ -42,6 +49,10 @@
         "error": "Failed to send message. Please try again."
     },
     "footer": {
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "quickLinks": "Quick Links",
+        "letsConnect": "Let's Connect",
+        "interested": "Interested in working together? Feel free to reach out!",
+        "getInTouch": "Get In Touch"
     }
 }

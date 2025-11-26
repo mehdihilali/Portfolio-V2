@@ -1,20 +1,23 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
         { icon: <FaGithub />, href: 'https://github.com/mehdihilali', label: 'GitHub' },
         { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/elhilali-elmehdi/?locale=en-US', label: 'LinkedIn' },
-        { icon: <FaEnvelope />, href: 'mailto:elhilali.elmehdi.edu@gmail.com', label: 'Email' },
+        { icon: <FaEnvelope />, href: 'mailto:elhilali.elmehdi.edu@gmail.com', label: t('contact.email') },
     ];
 
     const quickLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: t('nav.home'), href: '#home' },
+        { name: t('nav.about'), href: '#about' },
+        { name: t('nav.experience'), href: '#experience' },
+        { name: t('nav.projects'), href: '#projects' },
+        { name: t('nav.contact'), href: '#contact' },
     ];
 
     return (
@@ -25,7 +28,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-2xl font-bold text-gradient mb-4">&lt;Elmehdi ELHILALI /&gt;</h3>
                         <p className="text-slate-400 mb-4">
-                            Software Engineer passionate about creating beautiful and functional web experiences.
+                            {t('hero.role')}
                         </p>
                         <div className="flex gap-4">
                             {socialLinks.map((link, index) => (
@@ -45,7 +48,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+                        <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
                         <ul className="space-y-2">
                             {quickLinks.map((link, index) => (
                                 <li key={index}>
@@ -62,15 +65,15 @@ const Footer = () => {
 
                     {/* Newsletter or CTA */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Let's Connect</h4>
+                        <h4 className="text-lg font-semibold mb-4">{t('footer.letsConnect')}</h4>
                         <p className="text-slate-400 mb-4">
-                            Interested in working together? Feel free to reach out!
+                            {t('footer.interested')}
                         </p>
                         <a
                             href="#contact"
                             className="inline-block px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all duration-300 hover:scale-105"
                         >
-                            Get In Touch
+                            {t('footer.getInTouch')}
                         </a>
                     </div>
                 </div>
@@ -78,7 +81,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-slate-400 text-sm text-center md:text-left">
-                        © {currentYear} Elmehdi ELHILALI. All rights reserved.
+                        © {currentYear} Elmehdi ELHILALI. {t('footer.rights')}
                     </p>
                     <p className="text-slate-400 text-sm flex items-center gap-2">
                         Made with <FaHeart className="text-red-500" />

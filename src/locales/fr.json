@@ -19,7 +19,12 @@
         "title": "À propos de moi",
         "description1": "Je suis un ingénieur logiciel passionné avec une solide base en développement web et un œil avisé pour le design. Mon parcours dans la tech a commencé par une curiosité sur le fonctionnement d'internet, ce qui m'a conduit à me plonger dans le développement full-stack.",
         "description2": "Je me spécialise dans la création d'applications web évolutives utilisant React, Node.js et les technologies cloud modernes. J'aime résoudre des problèmes complexes et transformer des idées en réalité grâce au code.",
-        "skills": "Mes Compétences"
+        "description3": "J'accorde une grande importance à la qualité du code, aux tests, à la documentation et aux pipelines CI/CD pour livrer des logiciels fiables et maintenables.",
+        "skills": "Mes Compétences",
+        "story": "Mon Histoire",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "tools": "Outils & Autres"
     },
     "experience": {
         "title": "Expérience",
@@ -32,7 +37,9 @@
     },
     "contact": {
         "title": "Contactez-moi",
-        "subtitle": "Travaillons ensemble",
+        "subtitle": "Vous avez un projet en tête ou souhaitez collaborer ? N'hésitez pas à me contacter !",
+        "letsTalk": "Parlons-en",
+        "description": "Je suis toujours intéressé par de nouveaux projets et opportunités. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre !",
         "name": "Nom",
         "email": "Email",
         "message": "Message",
@@ -42,6 +49,10 @@
         "error": "Échec de l'envoi du message. Veuillez réessayer."
     },
     "footer": {
-        "rights": "Tous droits réservés."
+        "rights": "Tous droits réservés.",
+        "quickLinks": "Liens Rapides",
+        "letsConnect": "Connectons-nous",
+        "interested": "Intéressé par une collaboration ? N'hésitez pas à me contacter !",
+        "getInTouch": "Me Contacter"
     }
 }

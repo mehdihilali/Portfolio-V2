@@ -2,7 +2,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -38,7 +41,7 @@ const Contact = () => {
     const contactInfo = [
         {
             icon: <FaEnvelope />,
-            title: 'Email',
+            title: t('contact.email'),
             value: 'elhilali.elmehdi.edu@gmail.com',
             href: 'mailto:elhilali.elmehdi.edu@gmail.com',
         },
@@ -67,10 +70,10 @@ const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Get In <span className="text-gradient">Touch</span>
+                        {t('contact.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        Have a project in mind or want to collaborate? Feel free to reach out!
+                        {t('contact.subtitle')}
                     </p>
                 </motion.div>
 
@@ -82,10 +85,9 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold mb-6">Let's Talk</h3>
+                        <h3 className="text-2xl font-bold mb-6">{t('contact.letsTalk')}</h3>
                         <p className="text-slate-300 mb-8">
-                            I'm always interested in hearing about new projects and opportunities.
-                            Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                            {t('contact.description')}
                         </p>
 
                         <div className="space-y-6">
@@ -121,7 +123,7 @@ const Contact = () => {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                                    Name
+                                    {t('contact.name')}
                                 </label>
                                 <input
                                     type="text"
@@ -137,7 +139,7 @@ const Contact = () => {
 
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium mb-2">
-                                    Email
+                                    {t('contact.email')}
                                 </label>
                                 <input
                                     type="email"
@@ -153,7 +155,7 @@ const Contact = () => {
 
                             <div>
                                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                                    Message
+                                    {t('contact.message')}
                                 </label>
                                 <textarea
                                     id="message"
@@ -173,11 +175,11 @@ const Contact = () => {
                                 className="w-full px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                             >
                                 {isSubmitting ? (
-                                    'Sending...'
+                                    t('contact.sending')
                                 ) : (
                                     <>
                                         <FaPaperPlane />
-                                        Send Message
+                                        {t('contact.send')}
                                     </>
                                 )}
                             </button>
@@ -188,7 +190,7 @@ const Contact = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     className="text-green-400 text-center font-medium"
                                 >
-                                    ✓ Message sent successfully!
+                                    ✓ {t('contact.success')}
                                 </motion.div>
                             )}
                         </form>

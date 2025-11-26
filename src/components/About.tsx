@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaCode, FaRocket, FaLightbulb, FaUsers } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 const About = () => {
+    const { t } = useTranslation();
     const skills = {
         frontend: ['React', 'Angular', 'Next.js', 'React Native', 'TypeScript', 'HTML5', 'CSS', 'Tailwind CSS'],
         backend: ['Java', 'Spring Boot', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'Nest.js'],
@@ -46,11 +49,10 @@ const About = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        About <span className="text-gradient">Me</span>
+                        {t('about.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        Software Engineer specialized in Java/Spring Boot & React, passionate
-                        about modern architectures, clean code, and building impactful applications.
+                        {t('about.description1')}
                     </p>
                 </motion.div>
 
@@ -62,21 +64,16 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold mb-4 text-primary-400">My Story</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-primary-400">{t('about.story')}</h3>
                         <div className="space-y-4 text-slate-300">
                             <p>
-                                I am a Software Engineer who loves designing and building modern,
-                                high-quality web applications. I focus on building robust backend systems
-                                with Spring Boot and clean, efficient frontend interfaces using React.
+                                {t('about.description1')}
                             </p>
                             <p>
-                                I have worked on a variety of projects, from AI-powered career guidance
-                                platforms to government systems with secure document management, using
-                                technologies such as Spring Boot, React, RabbitMQ, Keycloak, and Docker.
+                                {t('about.description2')}
                             </p>
                             <p>
-                                I care deeply about code quality, testing, documentation, and CI/CD pipelines
-                                to deliver reliable and maintainable software.
+                                {t('about.description3')}
                             </p>
                         </div>
                     </motion.div>
@@ -88,10 +85,10 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h3 className="text-2xl font-bold mb-4 text-primary-400">Technical Skills</h3>
+                        <h3 className="text-2xl font-bold mb-4 text-primary-400">{t('about.skills')}</h3>
                         <div className="space-y-6">
                             <div>
-                                <h4 className="text-lg font-semibold mb-3 text-accent-400">Frontend</h4>
+                                <h4 className="text-lg font-semibold mb-3 text-accent-400">{t('about.frontend')}</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {skills.frontend.map((skill, i) => (
                                         <span
@@ -105,7 +102,7 @@ const About = () => {
                             </div>
 
                             <div>
-                                <h4 className="text-lg font-semibold mb-3 text-accent-400">Backend</h4>
+                                <h4 className="text-lg font-semibold mb-3 text-accent-400">{t('about.backend')}</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {skills.backend.map((skill, i) => (
                                         <span
@@ -119,7 +116,7 @@ const About = () => {
                             </div>
 
                             <div>
-                                <h4 className="text-lg font-semibold mb-3 text-accent-400">Tools & Others</h4>
+                                <h4 className="text-lg font-semibold mb-3 text-accent-400">{t('about.tools')}</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {skills.tools.map((skill, i) => (
                                         <span

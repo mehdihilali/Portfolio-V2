@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
+    const { t } = useTranslation();
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -63,7 +66,7 @@ const Hero = () => {
                 <div className="max-w-4xl mx-auto text-center">
                     <motion.div variants={itemVariants} className="mb-6">
                         <span className="inline-block px-4 py-2 rounded-full glass-effect text-sm font-medium text-primary-400 mb-4">
-                            👋 Welcome to my portfolio
+                            {t('hero.welcome')}
                         </span>
                     </motion.div>
 
@@ -71,7 +74,7 @@ const Hero = () => {
                         variants={itemVariants}
                         className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
                     >
-                        Hi, I'm{' '}
+                        {t('hero.greeting')}{' '}
                         <span className="text-gradient">Elmehdi ELHILALI</span>
                     </motion.h1>
 
@@ -79,15 +82,14 @@ const Hero = () => {
                         variants={itemVariants}
                         className="text-xl md:text-2xl text-slate-300 mb-8"
                     >
-                        Software Engineer specializing in building exceptional digital experiences
+                        {t('hero.role')}
                     </motion.p>
 
                     <motion.p
                         variants={itemVariants}
                         className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto"
                     >
-                        I craft beautiful, performant, and accessible web applications using modern technologies.
-                        Passionate about clean code, user experience, and continuous learning.
+                        {t('hero.description')}
                     </motion.p>
 
                     <motion.div
@@ -98,13 +100,13 @@ const Hero = () => {
                             href="#projects"
                             className="px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all duration-300 hover:scale-105"
                         >
-                            View My Work
+                            {t('hero.viewWork')}
                         </a>
                         <a
                             href="#contact"
                             className="px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105"
                         >
-                            Get In Touch
+                            {t('hero.contact')}
                         </a>
                     </motion.div>
 

@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion';
 import { FaBriefcase, FaMapMarkerAlt } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import { experiences } from '../data/experiences';
-import type { Experience as ExperienceType } from '../types';
+import type { Experience as ExperienceType, LocalizedString, LocalizedArray } from '../types';
 
 const ExperienceCard = ({ experience, index }: { experience: ExperienceType; index: number }) => {
+    const { i18n } = useTranslation();
+    const lang = (i18n.language.startsWith('fr') ? 'fr' : 'en') as keyof LocalizedString;
+    const descLang = (i18n.language.startsWith('fr') ? 'fr' : 'en') as keyof LocalizedArray;
+
     return (
         <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -22,7 +27,7 @@ const ExperienceCard = ({ experience, index }: { experience: ExperienceType; ind
                 <div className="flex flex-wrap items-start justify-between mb-4">
                     <div>
                         <h3 className="text-2xl font-bold text-white group-hover:text-primary-400 transition-colors">
-                            {experience.position}
+                            {experience.position[lang]}
                         </h3>
                         <div className="flex items-center gap-2 text-primary-400 font-semibold mt-1">
                             <FaBriefcase className="text-sm" />
@@ -31,18 +36,18 @@ const ExperienceCard = ({ experience, index }: { experience: ExperienceType; ind
                     </div>
                     <div className="text-right mt-2 md:mt-0">
                         <div className="text-slate-400 text-sm font-medium">
-                            {experience.duration}
+                            {experience.duration[lang]}
                         </div>
                         <div className="flex items-center gap-1 text-slate-500 text-sm mt-1">
                             <FaMapMarkerAlt className="text-xs" />
-                            <span>{experience.location}</span>
+                            <span>{experience.location[lang]}</span>
                         </div>
                     </div>
                 </div>
 
                 {/* Description */}
                 <ul className="space-y-2 mb-4">
-                    {experience.description.map((item, i) => (
+                    {experience.description[descLang].map((item, i) => (
                         <li key={i} className="text-slate-300 flex items-start">
                             <span className="text-primary-400 mr-2 mt-1.5">▹</span>
                             <span>{item}</span>
@@ -67,6 +72,8 @@ const ExperienceCard = ({ experience, index }: { experience: ExperienceType; ind
 };
 
 const Experience = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="experience" className="py-20 relative">
             <div className="container mx-auto px-6">
@@ -78,7 +85,7 @@ const Experience = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                        Work <span className="text-gradient">Experience</span>
+                        {t('experience.title')}
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
                         My professional journey and the amazing companies I've worked with

@@ -1,17 +1,24 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'en' ? 'fr' : 'en';
+        i18n.changeLanguage(newLang);
+    };
+
     const navItems = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' },
+        { name: t('nav.home'), href: '#home' },
+        { name: t('nav.about'), href: '#about' },
+        { name: t('nav.experience'), href: '#experience' },
+        { name: t('nav.projects'), href: '#projects' },
+        { name: t('nav.contact'), href: '#contact' },
     ];
 
     useEffect(() => {
@@ -79,6 +86,12 @@ const Navbar = () => {
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300" />
                             </a>
                         ))}
+                        <button
+                            onClick={toggleLanguage}
+                            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        >
+                            {i18n.language === 'en' ? 'FR' : 'EN'}
+                        </button>
                         <a
                             href="#contact"
                             onClick={(e) => handleNavClick(e, '#contact')}
@@ -90,7 +103,7 @@ const Navbar = () => {
                                 }
               `}
                         >
-                            Hire Me
+                            {t('nav.hireMe')}
                         </a>
                     </div>
 
@@ -129,6 +142,12 @@ const Navbar = () => {
                                     {item.name}
                                 </motion.a>
                             ))}
+                            <button
+                                onClick={toggleLanguage}
+                                className="text-xl font-medium text-slate-300 hover:text-primary-400 transition-colors mt-4"
+                            >
+                                {i18n.language === 'en' ? 'Français' : 'English'}
+                            </button>
                             <motion.a
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
@@ -137,7 +156,7 @@ const Navbar = () => {
                                 onClick={(e) => handleNavClick(e, '#contact')}
                                 className="px-8 py-3 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full font-semibold text-white shadow-lg shadow-primary-500/25 mt-4"
                             >
-                                Hire Me
+                                {t('nav.hireMe')}
                             </motion.a>
                         </div>
                     </motion.div>
