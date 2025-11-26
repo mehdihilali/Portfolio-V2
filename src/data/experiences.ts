@@ -22,14 +22,18 @@ export const experiences: Experience[] = [
                 'Designed and integrated an advanced Document Management System (GED) with secure storage and search',
                 'Built an intelligent chatbot for user assistance using Rasa',
                 'Implemented CI/CD pipelines using GitLab for automated testing and reliable deployments',
-                'Deployed Spring Boot backend using Nginx (reverse proxy) and React frontend using PM2'
+                'Deployed Spring Boot backend using Nginx (reverse proxy) and React frontend using PM2',
+                'Migrated the database from MySQL to SQL Server using tools such as MMSA and SSMS to ensure optimal performance and data integrity',
+                'Automated large-scale data extraction and transfer from the old Ministry website to the new platform using custom bulk download/upload scripts, improving migration efficiency by 40%'
             ],
             fr: [
-                'Développement de microservices Spring Boot et d\'un frontend React pour le portail du Ministère de la Santé',
-                'Conception et intégration d\'un système avancé de gestion documentaire (GED) avec stockage et recherche sécurisés',
-                'Création d\'un chatbot intelligent pour l\'assistance utilisateur utilisant Rasa',
+                'Développement de microservices Spring Boot et d’un frontend React pour le portail du Ministère de la Santé',
+                'Conception et intégration d’un système avancé de gestion documentaire (GED) avec stockage et recherche sécurisés',
+                'Création d’un chatbot intelligent pour l’assistance utilisateur utilisant Rasa',
                 'Mise en œuvre de pipelines CI/CD utilisant GitLab pour des tests automatisés et des déploiements fiables',
-                'Déploiement du backend Spring Boot utilisant Nginx (reverse proxy) et du frontend React utilisant PM2'
+                'Déploiement du backend Spring Boot utilisant Nginx (reverse proxy) et du frontend React utilisant PM2',
+                'Migration de la base de données de MySQL vers SQL Server en utilisant des outils tels que MMSA et SSMS pour garantir performance optimale et intégrité des données',
+                'Automatisation du téléchargement et de l’upload massif (scraping) depuis l’ancien site du Ministère vers la nouvelle plateforme à l’aide de scripts de bulk download/upload, augmentant l’efficacité de la migration de 40%'
             ]
         },
         technologies: [
@@ -40,7 +44,13 @@ export const experiences: Experience[] = [
             'Docker',
             'Rasa',
             'Nginx',
-            'PM2'
+            'PM2',
+            'MySQL',
+            'SQL Server',
+            'SSMA',
+            'SSMS',
+            'Web Scraping',
+            'Bulk Scripts'
         ],
     },
     {

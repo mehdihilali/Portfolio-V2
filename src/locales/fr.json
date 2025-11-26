@@ -13,7 +13,8 @@
         "role": "Ingénieur Logiciel spécialisé dans la création d'expériences numériques exceptionnelles",
         "description": "Je conçois des applications web belles, performantes et accessibles en utilisant des technologies modernes. Passionné par le code propre, l'expérience utilisateur et l'apprentissage continu.",
         "viewWork": "Voir mes travaux",
-        "contact": "Me contacter"
+        "contact": "Me contacter",
+        "downloadCV": "Télécharger CV"
     },
     "about": {
         "title": "À propos de moi",
