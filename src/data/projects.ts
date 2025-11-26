@@ -3,66 +3,117 @@ import type { Project } from '../types';
 export const projects: Project[] = [
     {
         id: '1',
-        title: 'E-Commerce Platform',
-        description: 'A full-featured e-commerce platform with payment integration',
-        longDescription: 'Built a comprehensive e-commerce solution with user authentication, product management, shopping cart, and secure payment processing using Stripe.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux', 'Tailwind CSS'],
-        image: '/projects/ecommerce.jpg',
-        githubUrl: 'https://github.com/yourusername/ecommerce',
-        liveUrl: 'https://ecommerce-demo.com',
+        title: 'Proway – AI Career Guidance Platform',
+        description: 'AI-assisted career guidance platform powered by microservices and OpenAI.',
+        longDescription:
+            'Developed an innovative AI-driven career guidance platform using a microservices architecture. '
+            + 'Built the backend with Spring Boot microservices communicating via RabbitMQ, and the frontend with React + TypeScript. '
+            + 'Integrated Azure OpenAI API to generate intelligent career recommendations. '
+            + 'Implemented secure authentication and authorization using Keycloak and Spring Security.',
+        technologies: [
+            'Spring Boot',
+            'React',
+            'TypeScript',
+            'RabbitMQ',
+            'Azure OpenAI',
+            'Keycloak',
+            'Spring Security',
+            'Docker',
+        ],
+        image: '/projects/proway.png',
         featured: true,
     },
+
     {
         id: '2',
-        title: 'Task Management App',
-        description: 'Collaborative task management tool with real-time updates',
-        longDescription: 'A real-time task management application with drag-and-drop functionality, team collaboration features, and notifications.',
-        technologies: ['React', 'TypeScript', 'Firebase', 'Material-UI', 'Socket.io'],
-        image: '/projects/taskmanager.jpg',
-        githubUrl: 'https://github.com/yourusername/taskmanager',
-        liveUrl: 'https://taskmanager-demo.com',
+        title: 'SportCoachApp',
+        description: 'AI-powered mobile fitness coaching app.',
+        longDescription:
+            'Built a cross-platform AI-powered fitness coaching application using React Native and Firebase. '
+            + 'Implemented secure Google Authentication using Firebase Auth and integrated FastAPI for backend services. '
+            + 'Added AI-driven personalized nutrition plans and training recommendations using large language models.',
+        technologies: [
+            'React Native',
+            'Firebase Auth',
+            'FastAPI',
+            'MongoDB',
+            'Python',
+            'Node.js',
+        ],
+        image: '/projects/sca.png',
         featured: true,
     },
+
     {
         id: '3',
-        title: 'Weather Dashboard',
-        description: 'Beautiful weather dashboard with forecasts and maps',
-        longDescription: 'An elegant weather application showing current conditions, 7-day forecasts, and interactive weather maps using OpenWeather API.',
-        technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js', 'Tailwind CSS'],
-        image: '/projects/weather.jpg',
-        githubUrl: 'https://github.com/yourusername/weather',
-        liveUrl: 'https://weather-demo.com',
-        featured: false,
+        title: 'OptiLab – Laboratory Management System',
+        description: 'A microservices-based system for managing medical laboratory operations.',
+        longDescription:
+            'Developed a medical laboratory management system using a microservices architecture built with Spring Boot. '
+            + 'Implemented staff management, test tracking, and patient data modules. '
+            + 'Created a responsive frontend using Angular and packaged deployments using Docker.',
+        technologies: [
+            'Spring Boot',
+            'Angular',
+            'Docker',
+            'Eureka Server',
+            'RabbitMQ',
+            'Keycloak',
+        ],
+        image: '/projects/optilab.png',
+        featured: true,
     },
+
     {
         id: '4',
-        title: 'Social Media Dashboard',
-        description: 'Analytics dashboard for social media metrics',
-        longDescription: 'A comprehensive analytics dashboard that aggregates data from multiple social media platforms with beautiful visualizations.',
-        technologies: ['Next.js', 'TypeScript', 'D3.js', 'PostgreSQL', 'Prisma'],
-        image: '/projects/social.jpg',
-        githubUrl: 'https://github.com/yourusername/social-dashboard',
-        featured: false,
+        title: 'Quizzy – Interactive Quiz Platform',
+        description: 'Online quiz platform with real-time scoring and authentication.',
+        longDescription:
+            'Designed and developed an interactive quiz platform using Spring Boot for the backend and Angular for the frontend. '
+            + 'Implemented real-time score tracking, secure authentication with Keycloak, and a modern responsive UI.',
+        technologies: [
+            'Spring Boot',
+            'Angular',
+            'Tailwind CSS',
+            'Keycloak',
+            'Docker',
+        ],
+        image: '/projects/quizzy.png',
+        featured: true,
     },
+
     {
         id: '5',
-        title: 'Portfolio CMS',
-        description: 'Content management system for portfolios',
-        longDescription: 'A headless CMS built specifically for managing portfolio content with an intuitive admin interface.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'AWS S3'],
-        image: '/projects/cms.jpg',
-        githubUrl: 'https://github.com/yourusername/portfolio-cms',
+        title: 'StageTrack – Internship Management System',
+        description: 'Modern web platform for managing internships and student progress.',
+        longDescription:
+            'Developed an internship management application using Next.js for the frontend and Spring Boot for the backend. '
+            + 'Implemented student profile management, internship tracking, and supervisor dashboards.',
+        technologies: [
+            'Next.js',
+            'Spring Boot',
+            'PostgreSQL',
+            'Tailwind CSS',
+        ],
+        image: '/projects/stagetrack.png',
         featured: false,
     },
+
     {
         id: '6',
-        title: 'Fitness Tracker',
-        description: 'Mobile-first fitness and workout tracking app',
-        longDescription: 'A progressive web app for tracking workouts, nutrition, and fitness goals with offline support.',
-        technologies: ['React', 'PWA', 'IndexedDB', 'Chart.js', 'Tailwind CSS'],
-        image: '/projects/fitness.jpg',
-        githubUrl: 'https://github.com/yourusername/fitness-tracker',
-        liveUrl: 'https://fitness-demo.com',
+        title: 'PropertyPulse – Real Estate Platform',
+        description: 'Property rental and booking platform built with modern web technologies.',
+        longDescription:
+            'Created a full-featured real estate rental platform using Next.js, NextAuth, and MongoDB. '
+            + 'Implemented property listings, booking management, authentication, and secure session handling.',
+        technologies: [
+            'Next.js',
+            'NextAuth',
+            'MongoDB',
+            'TypeScript',
+            'Tailwind CSS',
+        ],
+        image: '/projects/propertypulse.png',
         featured: false,
     },
 ];

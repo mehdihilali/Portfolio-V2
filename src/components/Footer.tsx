@@ -1,13 +1,12 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: <FaGithub />, href: 'https://github.com/yourusername', label: 'GitHub' },
-        { icon: <FaLinkedin />, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-        { icon: <FaTwitter />, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-        { icon: <FaEnvelope />, href: 'mailto:your.email@example.com', label: 'Email' },
+        { icon: <FaGithub />, href: 'https://github.com/mehdihilali', label: 'GitHub' },
+        { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/elhilali-elmehdi/?locale=en-US', label: 'LinkedIn' },
+        { icon: <FaEnvelope />, href: 'mailto:elhilali.elmehdi.edu@gmail.com', label: 'Email' },
     ];
 
     const quickLinks = [

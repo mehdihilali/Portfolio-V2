@@ -3,45 +3,72 @@ import type { Experience } from '../types';
 export const experiences: Experience[] = [
     {
         id: '1',
-        company: 'Tech Company Inc.',
-        position: 'Senior Software Engineer',
-        duration: 'Jan 2022 - Present',
-        location: 'San Francisco, CA',
+        company: 'Clever Council',
+        position: 'Full Stack Developer (Java / React)',
+        duration: 'Aug 2025 - Present',
+        location: 'Casablanca, Morocco',
         description: [
-            'Led development of microservices architecture serving 1M+ users',
-            'Mentored junior developers and conducted code reviews',
-            'Improved application performance by 40% through optimization',
-            'Implemented CI/CD pipelines reducing deployment time by 60%'
+            'Developed Spring Boot microservices and React frontend for the Ministry of Health portal',
+            'Designed and integrated an advanced Document Management System (GED) with secure storage and search',
+            'Built an intelligent chatbot for user assistance using Rasa',
+            'Implemented CI/CD pipelines using GitLab for automated testing and reliable deployments',
+            'Deployed Spring Boot backend using Nginx (reverse proxy) and React frontend using PM2'
         ],
-        technologies: ['React', 'Node.js', 'TypeScript', 'AWS', 'Docker', 'PostgreSQL'],
+        technologies: [
+            'Spring Boot',
+            'React',
+            'Microservices',
+            'GitLab CI/CD',
+            'Docker',
+            'Rasa',
+            'Nginx',
+            'PM2'
+        ],
     },
     {
         id: '2',
-        company: 'Startup Solutions',
-        position: 'Full Stack Developer',
-        duration: 'Jun 2020 - Dec 2021',
-        location: 'Remote',
+        company: 'PowerGo',
+        position: 'Full Stack Engineering Intern (Java / React)',
+        duration: 'Mar 2025 - Jul 2025',
+        location: 'Casablanca, Morocco',
         description: [
-            'Built responsive web applications using React and Next.js',
-            'Developed RESTful APIs with Node.js and Express',
-            'Collaborated with design team to implement pixel-perfect UIs',
-            'Integrated third-party services and payment gateways'
+            'Designed and developed Proway, an AI-powered career guidance platform',
+            'Built Spring Boot microservices with asynchronous communication using RabbitMQ',
+            'Secured authentication and authorization using Keycloak',
+            'Documented APIs with Swagger/OpenAPI',
+            'Achieved 75% test coverage using JUnit and Mockito'
         ],
-        technologies: ['React', 'Next.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+        technologies: [
+            'Spring Boot',
+            'React',
+            'RabbitMQ',
+            'Keycloak',
+            'Swagger',
+            'JUnit',
+            'Mockito',
+            'Docker'
+        ],
     },
     {
         id: '3',
-        company: 'Digital Agency',
-        position: 'Frontend Developer',
-        duration: 'Jan 2019 - May 2020',
-        location: 'New York, NY',
+        company: 'PowerGo',
+        position: 'Mobile Application Developer (Internship)',
+        duration: 'Jul 2024 - Sep 2024',
+        location: 'Casablanca-Settat, Morocco',
         description: [
-            'Created interactive and animated web experiences',
-            'Optimized websites for SEO and performance',
-            'Worked with clients to understand requirements',
-            'Maintained and updated existing client websites'
+            'Developed a mobile application for AI-powered sports coaching using React Native and Node.js/Express.js with MongoDB',
+            'Implemented Google authentication via Firebase for secure and seamless user access',
+            'Integrated the Gemini API to generate personalized nutrition recommendations and training programs',
+            'Delivered an innovative solution that combines modern technologies and AI to provide tailored coaching experiences'
         ],
-        technologies: ['JavaScript', 'React', 'SASS', 'WordPress', 'jQuery'],
+        technologies: [
+            'React Native',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'Firebase Auth',
+            'Gemini API'
+        ],
     },
 ];
 

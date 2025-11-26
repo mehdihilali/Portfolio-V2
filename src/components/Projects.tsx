@@ -13,10 +13,25 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             className="group relative glass-effect rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary-500/20 transition-all duration-300"
         >
             {/* Project Image */}
-            <div className="relative h-64 overflow-hidden bg-gradient-to-br from-primary-500/20 to-accent-500/20">
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-6xl opacity-20">🚀</div>
-                </div>
+            {/* Project Image */}
+            <div className="relative h-64 overflow-hidden bg-slate-100">
+                {project.image ? (
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                            // Optional: fallback if image fails to load
+                            e.currentTarget.style.display = 'none';
+                            // Or show fallback emoji
+                        }}
+                    />
+                ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-6xl opacity-20">🚀</div>
+                    </div>
+                )}
+
                 {project.featured && (
                     <div className="absolute top-4 right-4 px-3 py-1 bg-accent-500 text-white text-xs font-semibold rounded-full">
                         Featured

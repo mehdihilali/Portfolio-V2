@@ -1,0 +1,47 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "experience": "Expérience",
+        "projects": "Projets",
+        "contact": "Contact",
+        "hireMe": "Engagez-moi"
+    },
+    "hero": {
+        "welcome": "👋 Bienvenue sur mon portfolio",
+        "greeting": "Bonjour, je suis",
+        "role": "Ingénieur Logiciel spécialisé dans la création d'expériences numériques exceptionnelles",
+        "description": "Je conçois des applications web belles, performantes et accessibles en utilisant des technologies modernes. Passionné par le code propre, l'expérience utilisateur et l'apprentissage continu.",
+        "viewWork": "Voir mes travaux",
+        "contact": "Me contacter"
+    },
+    "about": {
+        "title": "À propos de moi",
+        "description1": "Je suis un ingénieur logiciel passionné avec une solide base en développement web et un œil avisé pour le design. Mon parcours dans la tech a commencé par une curiosité sur le fonctionnement d'internet, ce qui m'a conduit à me plonger dans le développement full-stack.",
+        "description2": "Je me spécialise dans la création d'applications web évolutives utilisant React, Node.js et les technologies cloud modernes. J'aime résoudre des problèmes complexes et transformer des idées en réalité grâce au code.",
+        "skills": "Mes Compétences"
+    },
+    "experience": {
+        "title": "Expérience",
+        "present": "Présent"
+    },
+    "projects": {
+        "title": "Projets en vedette",
+        "viewCode": "Voir le code",
+        "liveDemo": "Démo en direct"
+    },
+    "contact": {
+        "title": "Contactez-moi",
+        "subtitle": "Travaillons ensemble",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer le message",
+        "sending": "Envoi...",
+        "success": "Message envoyé avec succès !",
+        "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "footer": {
+        "rights": "Tous droits réservés."
+    }
+}

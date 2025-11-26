@@ -3,31 +3,35 @@ import { FaCode, FaRocket, FaLightbulb, FaUsers } from 'react-icons/fa';
 
 const About = () => {
     const skills = {
-        frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js'],
-        backend: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'GraphQL'],
-        tools: ['Git', 'Docker', 'AWS', 'CI/CD', 'Figma'],
+        frontend: ['React', 'Angular', 'Next.js', 'React Native', 'TypeScript', 'HTML5', 'CSS', 'Tailwind CSS'],
+        backend: ['Java', 'Spring Boot', 'Node.js', 'Express.js', 'PHP', 'Laravel', 'Nest.js'],
+        tools: ['Git', 'Github', 'GitHub Actions', 'GitLab CI/CD', 'Docker', 'Keycloak', 'RabbitMQ', 'Nginx'],
     };
 
     const highlights = [
         {
             icon: <FaCode />,
-            title: 'Clean Code',
-            description: 'Writing maintainable, scalable, and well-documented code',
+            title: 'Clean Code & TDD',
+            description:
+                'Writing maintainable, well-structured code with strong testing practices (JUnit, Mockito)',
         },
         {
             icon: <FaRocket />,
-            title: 'Performance',
-            description: 'Optimizing applications for speed and efficiency',
+            title: 'Microservices Architecture',
+            description:
+                'Building scalable systems with Spring Boot microservices, RabbitMQ messaging, and secured APIs',
         },
         {
             icon: <FaLightbulb />,
-            title: 'Innovation',
-            description: 'Staying updated with latest technologies and best practices',
+            title: 'Innovation & AI',
+            description:
+                'Experience building intelligent chatbots with Rasa and integrating AI-driven features into applications',
         },
         {
             icon: <FaUsers />,
-            title: 'Collaboration',
-            description: 'Working effectively in teams and mentoring others',
+            title: 'Agile Collaboration',
+            description:
+                'Team-oriented mindset, working in Scrum environments with CI/CD and continuous improvement',
         },
     ];
 
@@ -45,7 +49,8 @@ const About = () => {
                         About <span className="text-gradient">Me</span>
                     </h2>
                     <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                        Passionate software engineer with a love for creating elegant solutions
+                        Software Engineer specialized in Java/Spring Boot & React, passionate
+                        about modern architectures, clean code, and building impactful applications.
                     </p>
                 </motion.div>
 
@@ -60,18 +65,18 @@ const About = () => {
                         <h3 className="text-2xl font-bold mb-4 text-primary-400">My Story</h3>
                         <div className="space-y-4 text-slate-300">
                             <p>
-                                I'm a software engineer with a passion for building beautiful and functional web applications.
-                                With over 5 years of experience, I've worked on projects ranging from small startups to
-                                enterprise-level applications.
+                                I am a Software Engineer who loves designing and building modern,
+                                high-quality web applications. I focus on building robust backend systems
+                                with Spring Boot and clean, efficient frontend interfaces using React.
                             </p>
                             <p>
-                                I specialize in full-stack development with a focus on modern JavaScript frameworks and
-                                cloud technologies. I believe in writing clean, maintainable code and creating exceptional
-                                user experiences.
+                                I have worked on a variety of projects, from AI-powered career guidance
+                                platforms to government systems with secure document management, using
+                                technologies such as Spring Boot, React, RabbitMQ, Keycloak, and Docker.
                             </p>
                             <p>
-                                When I'm not coding, you can find me contributing to open-source projects, writing technical
-                                articles, or exploring new technologies.
+                                I care deeply about code quality, testing, documentation, and CI/CD pipelines
+                                to deliver reliable and maintainable software.
                             </p>
                         </div>
                     </motion.div>
@@ -98,6 +103,7 @@ const About = () => {
                                     ))}
                                 </div>
                             </div>
+
                             <div>
                                 <h4 className="text-lg font-semibold mb-3 text-accent-400">Backend</h4>
                                 <div className="flex flex-wrap gap-2">
@@ -111,6 +117,7 @@ const About = () => {
                                     ))}
                                 </div>
                             </div>
+
                             <div>
                                 <h4 className="text-lg font-semibold mb-3 text-accent-400">Tools & Others</h4>
                                 <div className="flex flex-wrap gap-2">

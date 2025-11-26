@@ -1,0 +1,47 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact",
+        "hireMe": "Hire Me"
+    },
+    "hero": {
+        "welcome": "👋 Welcome to my portfolio",
+        "greeting": "Hi, I'm",
+        "role": "Software Engineer specializing in building exceptional digital experiences",
+        "description": "I craft beautiful, performant, and accessible web applications using modern technologies. Passionate about clean code, user experience, and continuous learning.",
+        "viewWork": "View My Work",
+        "contact": "Get In Touch"
+    },
+    "about": {
+        "title": "About Me",
+        "description1": "I am a passionate Software Engineer with a strong foundation in web development and a keen eye for design. My journey in tech started with a curiosity about how things work on the internet, which led me to dive deep into full-stack development.",
+        "description2": "I specialize in building scalable web applications using React, Node.js, and modern cloud technologies. I love solving complex problems and turning ideas into reality through code.",
+        "skills": "My Skills"
+    },
+    "experience": {
+        "title": "Experience",
+        "present": "Present"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "viewCode": "View Code",
+        "liveDemo": "Live Demo"
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Let's work together",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message",
+        "sending": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again."
+    },
+    "footer": {
+        "rights": "All rights reserved."
+    }
+}
