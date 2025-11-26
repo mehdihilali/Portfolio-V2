@@ -1,0 +1,34 @@
+export interface Experience {
+    id: string;
+    company: string;
+    position: string;
+    duration: string;
+    location: string;
+    description: string[];
+    technologies: string[];
+    logo?: string;
+}
+
+export interface Project {
+    id: string;
+    title: string;
+    description: string;
+    longDescription?: string;
+    technologies: string[];
+    image: string;
+    githubUrl?: string;
+    liveUrl?: string;
+    featured?: boolean;
+}
+
+export interface Skill {
+    name: string;
+    category: 'frontend' | 'backend' | 'tools' | 'other';
+    level: number; // 1-100
+}
+
+export interface SocialLink {
+    name: string;
+    url: string;
+    icon: string;
+}
