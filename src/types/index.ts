@@ -42,3 +42,12 @@ export interface SocialLink {
     url: string;
     icon: string;
 }
+
+export interface Education {
+    id: string;
+    institution: LocalizedString;
+    degree: LocalizedString;
+    duration: LocalizedString;
+    location: LocalizedString;
+    description: LocalizedArray;
+}

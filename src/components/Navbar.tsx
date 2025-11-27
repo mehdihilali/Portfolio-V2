@@ -14,6 +14,7 @@ const Navbar = () => {
         { name: t('nav.home'), href: '#home' },
         { name: t('nav.about'), href: '#about' },
         { name: t('nav.experience'), href: '#experience' },
+        { name: t('nav.education'), href: '#education' },
         { name: t('nav.projects'), href: '#projects' },
         { name: t('nav.contact'), href: '#contact' },
     ];
@@ -56,7 +57,7 @@ const Navbar = () => {
                     className={`
             flex items-center justify-between px-6 transition-all duration-300
             ${isScrolled
-                            ? 'w-[90%] md:w-[80%] max-w-5xl bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-full shadow-lg shadow-primary-500/5 h-14'
+                            ? 'w-[95%] md:w-[90%] max-w-6xl bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-full shadow-lg shadow-primary-500/5 h-14'
                             : 'w-full container bg-transparent h-16'
                         }
           `}
@@ -65,13 +66,13 @@ const Navbar = () => {
                     <a
                         href="#home"
                         onClick={(e) => handleNavClick(e, '#home')}
-                        className="text-xl font-bold text-gradient cursor-pointer tracking-tight"
+                        className={`font-bold text-gradient cursor-pointer tracking-tight ${isScrolled ? 'text-lg' : 'text-xl'}`}
                     >
                         &lt;Elmehdi ELHILALI /&gt;
                     </a>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8">
+                    <div className={`hidden md:flex items-center ${isScrolled ? 'gap-4' : 'gap-8'}`}>
                         {navItems.map((item) => (
                             <a
                                 key={item.name}

@@ -3,6 +3,7 @@
         "home": "Accueil",
         "about": "À propos",
         "experience": "Expérience",
+        "education": "Formation",
         "projects": "Projets",
         "contact": "Contact",
         "hireMe": "Engagez-moi"
@@ -49,6 +50,10 @@
         "title": "Expérience",
         "subtitle": "Mon parcours professionnel et les entreprises incroyables avec lesquelles j'ai travaillé",
         "present": "Présent"
+    },
+    "education": {
+        "title": "Formation",
+        "subtitle": "Mon parcours académique et les connaissances que j'ai acquises en chemin"
     },
     "projects": {
         "title": "Projets en vedette",

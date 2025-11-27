@@ -3,6 +3,7 @@
         "home": "Home",
         "about": "About",
         "experience": "Experience",
+        "education": "Education",
         "projects": "Projects",
         "contact": "Contact",
         "hireMe": "Hire Me"
@@ -49,6 +50,10 @@
         "title": "Experience",
         "subtitle": "My professional journey and the amazing companies I've worked with",
         "present": "Present"
+    },
+    "education": {
+        "title": "Education",
+        "subtitle": "My academic journey and the knowledge I've gained along the way"
     },
     "projects": {
         "title": "Featured Projects",
