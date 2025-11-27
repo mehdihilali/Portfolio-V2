@@ -50,7 +50,9 @@ export const experiences: Experience[] = [
             'SSMA',
             'SSMS',
             'Web Scraping',
-            'Bulk Scripts'
+            'Bulk Scripts',
+            'PHP',
+            'Laravel'
         ],
     },
     {

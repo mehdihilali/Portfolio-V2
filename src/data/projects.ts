@@ -2,6 +2,44 @@ import type { Project } from '../types';
 
 export const projects: Project[] = [
     {
+        id: '0',
+        title: {
+            en: 'MSPS – Ministry of Health Portal Automation & Optimization',
+            fr: 'MSPS – Automatisation & Optimisation du Portail du Ministère de la Santé'
+        },
+        description: {
+            en: 'Automation and optimization of the Ministry of Health portal, including bulk upload/download and system migration.',
+            fr: 'Automatisation et optimisation du portail du Ministère de la Santé, incluant le téléchargement et l’upload en masse ainsi que la migration du système.'
+        },
+        longDescription: {
+            en:
+                'Developed a high-performance solution to automate the Ministry of Health portal using bulk download and upload scripts. '
+                + 'Implemented data migration from the old system to the new web platform. '
+                + 'Optimized workflows and ensured reliable synchronization between both platforms.',
+            fr:
+                'Développement d’une solution performante pour automatiser le portail du Ministère de la Santé grâce à des scripts de téléchargement et d’upload en masse. '
+                + 'Mise en place de la migration des données de l’ancien système vers la nouvelle plateforme. '
+                + 'Optimisation des workflows et garantie d’une synchronisation fiable entre les deux plateformes.'
+        },
+        technologies: [
+            'React',
+            'Java/Spring Boot',
+            'TypeScript',
+            'PHP',
+            'Laravel',
+            'Automatisation',
+            'Rasa',
+            'Nginx',
+            'Apache',
+            'SSMA',
+            'SSMS',
+            'Web Scraping',
+            'Bulk Scripts'
+        ],
+        image: '/projects/msps.png',
+        featured: true
+    },
+    {
         id: '1',
         title: {
             en: 'Proway – AI Career Guidance Platform',
