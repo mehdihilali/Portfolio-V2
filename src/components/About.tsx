@@ -137,7 +137,7 @@ const About = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass-effect rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300 group"
+                            className="glass-effect rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300 group select-none"
                         >
                             <div className="text-4xl text-primary-400 mb-4 group-hover:scale-110 transition-transform inline-block">
                                 {highlight.icon}

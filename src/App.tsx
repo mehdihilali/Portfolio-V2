@@ -1,30 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Home from './components/Home';
+import ProjectDetail from './components/ProjectDetail';
 import Footer from './components/Footer';
 import ParticlesBackground from './components/ParticlesBackground';
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <ParticlesBackground />
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Education />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen">
+        <ParticlesBackground />
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project/:id" element={<ProjectDetail />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
-

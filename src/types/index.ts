@@ -26,6 +26,8 @@ export interface Project {
     longDescription?: LocalizedString;
     technologies: string[];
     image: string;
+    images?: string[]; // Additional images for detail page
+    solutions?: LocalizedArray; // Key solutions/features
     githubUrl?: string;
     liveUrl?: string;
     featured?: boolean;
