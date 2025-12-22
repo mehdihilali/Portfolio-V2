@@ -23,14 +23,12 @@ export const projects: Project[] = [
         },
         technologies: [
             'React',
-            'Java/Spring Boot',
             'TypeScript',
             'Automatisation',
             'Rasa',
             'Nginx',
             'SSMA',
             'SSMS',
-            'Web Scraping',
             'Bulk Scripts'
         ],
         image: '/projects/msps.png',
