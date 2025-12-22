@@ -25,8 +25,6 @@ export const projects: Project[] = [
             'React',
             'Java/Spring Boot',
             'TypeScript',
-            'PHP',
-            'Laravel',
             'Automatisation',
             'Rasa',
             'Nginx',
