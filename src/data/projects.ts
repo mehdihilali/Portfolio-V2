@@ -28,7 +28,6 @@ export const projects: Project[] = [
             'Automatisation',
             'Rasa',
             'Nginx',
-            'Apache',
             'SSMA',
             'SSMS',
             'Web Scraping',
