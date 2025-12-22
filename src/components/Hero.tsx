@@ -109,8 +109,8 @@ const Hero = () => {
                             {t('hero.contact')}
                         </a>
                         <a
-                            href="/CV_Elmehdi_ELHILALI.pdf"
-                            download="CV_Elmehdi_ELHILALI.pdf"
+                            href="/CV_ELHILALI_ELMEHDI.pdf"
+                            download="CV_ELHILALI_ELMEHDI.pdf"
                             className="px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105 flex items-center gap-2"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
