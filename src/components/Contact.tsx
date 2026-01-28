@@ -37,7 +37,7 @@ const Contact = () => {
                 from_name: formData.name,
                 from_email: formData.email,
                 message: formData.message,
-                to_email: 'elhilali.elmehdi.edu@gmail.com',
+                to_email: 'elmehdi.elhilali.dev@gmail.com',
             };
 
             await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -64,14 +64,14 @@ const Contact = () => {
         {
             icon: <FaEnvelope />,
             title: t('contact.email'),
-            value: 'elhilali.elmehdi.edu@gmail.com',
-            href: 'mailto:elhilali.elmehdi.edu@gmail.com',
+            value: 'elmehdi.elhilali.dev@gmail.com',
+            href: 'mailto:elmehdi.elhilali.dev@gmail.com',
         },
         {
             icon: <FaPhone />,
             title: 'Phone',
-            value: '+212 650 491 267',
-            href: 'tel:+212650491267',
+            value: '+212 7 20 65 79 89',
+            href: 'tel:+212720657989',
         },
         {
             icon: <FaMapMarkerAlt />,
