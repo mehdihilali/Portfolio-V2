@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 import { useTranslation } from 'react-i18next';
 
@@ -8,8 +8,8 @@ const Footer = () => {
 
     const socialLinks = [
         { icon: <FaGithub />, href: 'https://github.com/mehdihilali', label: 'GitHub' },
-        { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/elhilali-elmehdi/?locale=en-US', label: 'LinkedIn' },
-        { icon: <FaEnvelope />, href: 'mailto:elhilali.elmehdi.edu@gmail.com', label: t('contact.email') },
+        { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/elhilali-elmehdi/', label: 'LinkedIn' },
+        { icon: <FaEnvelope />, href: 'mailto:elmehdi.elhilali.dev@gmail.com', label: t('contact.email') },
     ];
 
     const quickLinks = [
@@ -82,9 +82,6 @@ const Footer = () => {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-slate-400 text-sm text-center md:text-left">
                         © {currentYear} Elmehdi ELHILALI. {t('footer.rights')}
-                    </p>
-                    <p className="text-slate-400 text-sm flex items-center gap-2">
-                        Made with <FaHeart className="text-red-500" />
                     </p>
                 </div>
             </div>

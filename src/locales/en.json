@@ -15,7 +15,13 @@
         "description": "I craft beautiful, performant, and accessible web applications using modern technologies. Passionate about clean code, user experience, and continuous learning.",
         "viewWork": "View My Work",
         "contact": "Get In Touch",
-        "downloadCV": "Download CV"
+        "downloadCV": "Download CV",
+        "cvLanguages": {
+            "english": "English",
+            "englishVersion": "English Version",
+            "french": "French",
+            "frenchVersion": "French Version"
+        }
     },
     "about": {
         "title": "About Me",

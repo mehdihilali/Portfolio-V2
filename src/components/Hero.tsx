@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 
 import { useTranslation } from 'react-i18next';
+import CVDownloadButton from './CVDownloadButton';
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -28,7 +29,7 @@ const Hero = () => {
     };
 
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32">
+        <section id="home" className="min-h-screen flex items-center justify-center relative pt-32">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <motion.div
@@ -108,16 +109,7 @@ const Hero = () => {
                         >
                             {t('hero.contact')}
                         </a>
-                        <a
-                            href="/CV_ELHILALI_ELMEHDI.pdf"
-                            download="CV_ELHILALI_ELMEHDI.pdf"
-                            className="px-8 py-4 glass-effect rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 hover:scale-105 flex items-center gap-2"
-                        >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            {t('hero.downloadCV')}
-                        </a>
+                        <CVDownloadButton />
                     </motion.div>
 
                     <motion.div

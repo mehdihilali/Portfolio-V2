@@ -15,7 +15,13 @@
         "description": "Je conçois des applications web belles, performantes et accessibles en utilisant des technologies modernes. Passionné par le code propre, l'expérience utilisateur et l'apprentissage continu.",
         "viewWork": "Voir mes travaux",
         "contact": "Me contacter",
-        "downloadCV": "Télécharger CV"
+        "downloadCV": "Télécharger CV",
+        "cvLanguages": {
+            "english": "Anglais",
+            "englishVersion": "Version Anglaise",
+            "french": "Français",
+            "frenchVersion": "Version Française"
+        }
     },
     "about": {
         "title": "À propos de moi",
